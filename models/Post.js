@@ -34,6 +34,8 @@ Post.init(
   {
     sequelize,
     freezeTableName: true,
+    // underscored: true, defines the column names using underscore"_"
+    // e.g post_url, user_id 
     underscored: true,
     modelName: "post",
   }
