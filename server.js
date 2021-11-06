@@ -13,6 +13,6 @@ app.use(routes);
 
 // turn on connection to db and server
 // force: true performs similarly to DROP TABLE IF EXISTS in SQL
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
